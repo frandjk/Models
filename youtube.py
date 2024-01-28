@@ -52,7 +52,6 @@ plt.xlabel("Video Id")
 plt.ylabel("Count")
 plt.title("Top 5 Videos that trended maximum days in USA")
 
-
 df_usa_maximum_views = usa_video_views['sXP6vliZIHI']
 df_usa_maximum_likes = usa_video_likes['sXP6vliZIHI']
 df_usa_maximum_dislikes = usa_video_dislikes['sXP6vliZIHI']
