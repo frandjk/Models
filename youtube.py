@@ -4,7 +4,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 df_usa = pd.read_csv('USvideos.csv')
-
 df_usa[df_usa['description'].apply(lambda x: pd.isna(x))].head()
 df_usa['trending_date'] = pd.to_datetime(df_usa['trending_date'], format='%y.%d.%m').dt.date
 publish_time = pd.to_datetime(df_usa['publish_time'], format='%Y-%m-%dT%H:%M:%S.%fZ')
